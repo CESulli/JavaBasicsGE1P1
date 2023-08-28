@@ -1,0 +1,19 @@
+package GE1P1;
+
+public class E1Temperatures {
+    public static void main(String[] args) {
+        int[] temp={87,78,81,80,77,80,83};
+        int largest=temp[0];
+        int lowest=temp[0];
+
+        for(int t:temp){
+            if(t>largest){
+                largest=t;
+            }else if (t<lowest){
+                lowest = t;
+                }
+        }
+        System.out.println("Highest temperature for the week: "+largest);
+        System.out.println("Lowest temperature for the week: "+ lowest);
+    }
+}
