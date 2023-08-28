@@ -1,0 +1,19 @@
+package GE1P1;
+
+public class E8MaxMinArray {
+    public static void main(String[] args) {
+         int[] numbers={12,41,81,75,98,23,83};
+         int max=numbers[0];
+         int min=numbers[0];
+
+         for(int n:numbers){
+             if(n>max){
+               max=n;
+                }else if (n<min){
+                    min = n;
+                }
+            }
+            System.out.println("Maximum number: "+max);
+            System.out.println("Minimum number: "+min);
+    }
+}
